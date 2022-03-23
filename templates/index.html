@@ -54,7 +54,8 @@
                 {% for hemisphere in mars.hemispheres_images %}
                     <li>{{hemisphere.image_url}}</li>
                 {%endfor%} 
-            </ul>      
+            </ul>   
+            <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">    
         </div>
       </div>
     </div>
